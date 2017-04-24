@@ -36,7 +36,7 @@ alternatively bid a natural suit (showing six cards and a very strong
 hand {This is not very useful with the structure described above. It
 would be much better to have new suits after a weak-two as moderately
 strong (14-16 HCP) but non-forcing, but the system currently says that
-they are forcing.}}.
+they are forcing.}.
 
 * 2!H -- 2!N (_Ogust_, 16+ HCP)
     * 3!C -- one !H honour, no extra values {"Extra values" meaning a
