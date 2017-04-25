@@ -154,3 +154,24 @@ preemptive.
     * 3!C -- 5+!C, 4+!H
     * 3!D -- 5+!D, 4+!H
     * 3!H -- preemptive
+
+## After a Michaels cuebid
+
+After partner opens a major suit and the RHO cuebids, showing a
+two-suited hand (with at least five each in the other major and a
+minor), most bids show support for partner's major. The only bids that
+deny a fit are doubling (for penalties) and a cuebid in the opponent's
+known suit.
+
+* 1!H -- (2!H)
+    * X -- penalty interest
+    * 2!S -- game-forcing, no !H support
+    * 2!N -- 3+!H, invitational
+    * 3!C -- 4+!H, 5+!C, invitational {Like a fit-jump, but without
+      the jump.}
+    * 3!D -- 4+!H, 5+!D, invitational
+    * 3!H -- competitive
+    * 3!S -- splinter, !H support
+    * 4!C -- as 3!C, but enough offensive strength to play 4!H
+    * 4!D -- as above
+    * 4!H -- to play (two-way)
