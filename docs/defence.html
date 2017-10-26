@@ -1,285 +1,225 @@
-<!-- with thanks to http://www.kathryncramer.com/kathryn_cramer/2004/06/css_rollover_fo.html#comment-6a00d8341c6bcf53ef00d8343b944c53ef -->
-<style>
-
-  body { max-width: 40em; margin: auto; }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!-- with thanks to http://www.kathryncramer.com/kathryn_cramer/2004/06/css_rollover_fo.html#comment-6a00d8341c6bcf53ef00d8343b944c53ef -->
+  <style>
   
-  a.footnote { position: relative; }
-  a.footnote:hover { visibility: visible; }
-  a.footnote span { display: none; }
-
-  a.footnote:hover span {
-  display: block;
-  position: absolute;
-  left: 1.5em;
-  width: 15em;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
-  color: #111;
-  font-size: 80%;
-  z-index: 1;
-}
-</style>
-<meta charset="UTF-8"> 
-<!-- Compiled Markdown begins here -->
-<h1>Defensive Bidding</h1>
-
-<h2>Against strong 1<font color=green>&clubs;</font> (CRASH)</h2>
-
-<p>Over an opponent's strong 1<font color=green>&clubs;</font> opening (that shows a strong hand<a class="footnote" name="footnote1"><sup>1</sup><span>In
-Precision, this is 16+ HCP.</span></a> and doesn't promise any <font color=green>&clubs;</font> length), all
-bids except doubling are preemptive and deny a strong hand. Doubling
-is for takeout, showing values (at least 12 HCP) and should be a hint
-for partner not to preempt or compete too much, since opponents might
-not have game.</p>
-
-<p>The 1<font color=orange>&diams;</font>, 1<font color=red>&hearts;</font> and 1N bids are two-suited, showing suits of the same
-colour, rank and shape<a class="footnote" name="footnote2"><sup>2</sup><span>Shapes being "rounded" and "pointed".</span></a>
-respectively. Overcalling 1<font color=blue>&spades;</font> shows a weak holding with at least five
-spades.</p>
-
-<p>In response to the two-suited overcalls, advancer should assume that
-overcaller holds the pair of suits in which he is shorter and bid his
-preferred option. Overcaller then passes if he really holds that suit,
-and otherwise correct to the lower of his two suits. Advancer can then
-pass or correct to the other (now known) suit.</p>
-
-<p>2<font color=green>&clubs;</font> shows a three-suited hand, after which partner chooses his
-preferred suit. The 2<font color=orange>&diams;</font> and 2<font color=red>&hearts;</font> bids are made either with a six-card
-holding in the higher suit (<font color=red>&hearts;</font> and <font color=blue>&spades;</font> respectively) or with 5-5 in the
-remaining two. Partner is expected to bid the next suit as a
-pass/correct relay.</p>
-
+    body { max-width: 40em; margin: auto; }
+    
+    a.footnote { position: relative; }
+    a.footnote:hover { visibility: visible; }
+    a.footnote span { display: none; }
+  
+    a.footnote:hover span {
+    display: block;
+    position: absolute;
+    left: 1.5em;
+    width: 15em;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #111;
+    font-size: 80%;
+    z-index: 1;
+    }
+  
+    ul { list-style-type: disc; font-size: 11pt; }
+    body > ul {
+    list-style-type: none;
+    margin-left: 1em; padding-left: 0;
+    font-weight: thick;
+    /*border-top: thin solid gray;
+    border-bottom: thin solid gray;*/
+    }
+    
+    /*ul li ul li { margin-top: 6px; }
+    ul li ul li ul li { margin-top: 0; }*/
+  
+    table { margin-left: auto; margin-right: auto; border: thin solid gray; }
+    
+    body { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+  </style>
+  <meta charset="UTF-8"> 
+  <!-- Compiled Markdown begins here -->
+</head>
+<body>
+<h1 id="defensive-bidding">Defensive Bidding</h1>
+<h2 id="against-strong-1c-crash">Against strong 1<font color=green>&clubs;</font> (CRASH)</h2>
+<p>Over an opponent's strong 1<font color=green>&clubs;</font> opening (that shows a strong hand <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> and doesn't promise any <font color=green>&clubs;</font> length), all bids except doubling are preemptive and deny a strong hand. Doubling is for takeout, showing values (at least 12 HCP) and should be a hint for partner not to preempt or compete too much, since opponents might not have game.</p>
+<p>The 1<font color=orange>&diams;</font>, 1<font color=red>&hearts;</font> and 1N bids are two-suited, showing suits of the same colour, rank and shape <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> respectively. Overcalling 1<font color=blue>&spades;</font> shows a weak holding with at least five spades.</p>
+<p>In response to the two-suited overcalls, advancer should assume that overcaller holds the pair of suits in which he is shorter and bid his preferred option. Overcaller then passes if he really holds that suit, and otherwise correct to the lower of his two suits. Advancer can then pass or correct to the other (now known) suit.</p>
+<p>2<font color=green>&clubs;</font> shows a three-suited hand, after which partner chooses his preferred suit. The 2<font color=orange>&diams;</font> and 2<font color=red>&hearts;</font> bids are made either with a six-card holding in the higher suit (<font color=red>&hearts;</font> and <font color=blue>&spades;</font> respectively) or with 5-5 in the remaining two. Partner is expected to bid the next suit as a pass/correct relay.</p>
 <p>All suit bids above (and including) 2<font color=blue>&spades;</font> are natural and preemptive.</p>
-
 <ul>
-<li>(1<font color=green>&clubs;</font>) &ndash; strong, artificial (doesn't promise <font color=green>&clubs;</font>)
+<li>(1<font color=green>&clubs;</font>) &mdash; strong, artificial (doesn't promise <font color=green>&clubs;</font>)
 <ul>
-<li>X &ndash; 12+ HCP, takeout<a class="footnote" name="footnote3"><sup>3</sup><span>The only constructive bid available.</span></a></li>
-<li>1<font color=orange>&diams;</font> &ndash; 5-4, same colour (<font color=green>&clubs;</font>/<font color=blue>&spades;</font> or <font color=orange>&diams;</font>/<font color=red>&hearts;</font>)</li>
-<li>1<font color=red>&hearts;</font> &ndash; 5-4, same rank (<font color=green>&clubs;</font>/<font color=orange>&diams;</font> or <font color=red>&hearts;</font>/<font color=blue>&spades;</font>)</li>
-<li>1<font color=blue>&spades;</font> &ndash; 5+<font color=blue>&spades;</font>, weak<a class="footnote" name="footnote4"><sup>4</sup><span>Could even be a four-card <font color=blue>&spades;</font> suit at favourable vulnerability.</span></a></li>
-<li>1N &ndash; 5-4, same shape (<font color=green>&clubs;</font>/<font color=red>&hearts;</font> or <font color=orange>&diams;</font>/<font color=blue>&spades;</font>)</li>
-<li>2<font color=green>&clubs;</font> &ndash; three-suited</li>
-<li>2<font color=orange>&diams;</font> &ndash; 6+<font color=red>&hearts;</font> or 5-5 <font color=green>&clubs;</font>/<font color=blue>&spades;</font>
+<li>X &mdash; 12+ HCP, takeout <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+<li>1<font color=orange>&diams;</font> &mdash; 5-4, same colour (<font color=green>&clubs;</font>/<font color=blue>&spades;</font> or <font color=orange>&diams;</font>/<font color=red>&hearts;</font>)</li>
+<li>1<font color=red>&hearts;</font> &mdash; 5-4, same rank (<font color=green>&clubs;</font>/<font color=orange>&diams;</font> or <font color=red>&hearts;</font>/<font color=blue>&spades;</font>)</li>
+<li>1<font color=blue>&spades;</font> &mdash; 5+<font color=blue>&spades;</font>, weak <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></li>
+<li>1N &mdash; 5-4, same shape (<font color=green>&clubs;</font>/<font color=red>&hearts;</font> or <font color=orange>&diams;</font>/<font color=blue>&spades;</font>)</li>
+<li>2<font color=green>&clubs;</font> &mdash; three-suited</li>
+<li>2<font color=orange>&diams;</font> &mdash; 6+<font color=red>&hearts;</font> or 5-5 <font color=green>&clubs;</font>/<font color=blue>&spades;</font>
 <ul>
-<li>2<font color=red>&hearts;</font> &ndash; pass or correct</li>
+<li>2<font color=red>&hearts;</font> &mdash; pass or correct</li>
 </ul></li>
-<li>2<font color=red>&hearts;</font> &ndash; 6+<font color=blue>&spades;</font> or 5-5 <font color=green>&clubs;</font>/<font color=orange>&diams;</font>
+<li>2<font color=red>&hearts;</font> &mdash; 6+<font color=blue>&spades;</font> or 5-5 <font color=green>&clubs;</font>/<font color=orange>&diams;</font>
 <ul>
-<li>2<font color=blue>&spades;</font> &ndash; pass or correct</li>
+<li>2<font color=blue>&spades;</font> &mdash; pass or correct</li>
 </ul></li>
 </ul></li>
 </ul>
-
-<h2>Against multi 2<font color=orange>&diams;</font> (multi against multi)</h2>
-
-<p>Over an opponent's multi 2<font color=orange>&diams;</font> opening<a class="footnote" name="footnote5"><sup>5</sup><span>Showing a weak-two in <font color=red>&hearts;</font> or <font color=blue>&spades;</font>,
-with or without additional strong meanings.</span></a>, a double is also
-"multi", usually showing either major and at least opening
-strength. The usual 2N overcall<a class="footnote" name="footnote6"><sup>6</sup><span>15-18 HCP, balanced, stops in both
-<font color=red>&hearts;</font> and <font color=blue>&spades;</font>.</span></a> is replaced with 2<font color=red>&hearts;</font>. The other two-level bids (2<font color=blue>&spades;</font> and
-2N) are transfers to the minor suits.</p>
-
-<p>Three-level minor suit overcalls are competitive, showing at least six
-cards and slightly less than opening strength. The majors show a 5-5
-holding with an unspecified minor suit and are made with around eight
-tricks.</p>
-
+<h2 id="against-multi-2d-multi-against-multi">Against multi 2<font color=orange>&diams;</font> (multi against multi)</h2>
+<p>Over an opponent's multi 2<font color=orange>&diams;</font> opening <a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>, a double is also "multi", usually showing either major and at least opening strength. The usual 2N overcall <a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> is replaced with 2<font color=red>&hearts;</font>. The other two-level bids (2<font color=blue>&spades;</font> and 2N) are transfers to the minor suits.</p>
+<p>Three-level minor suit overcalls are competitive, showing at least six cards and slightly less than opening strength. The majors show a 5-5 holding with an unspecified minor suit and are made with around eight tricks.</p>
 <ul>
-<li>(2<font color=orange>&diams;</font>) &ndash; multi (<font color=red>&hearts;</font>/<font color=blue>&spades;</font> weak-two or strong)
+<li>(2<font color=orange>&diams;</font>) &mdash; multi (<font color=red>&hearts;</font>/<font color=blue>&spades;</font> weak-two or strong)
 <ul>
-<li>X &ndash; 12+ HCP with 5+ in <font color=red>&hearts;</font> or <font color=blue>&spades;</font>, or balanced 19-22 HCP, or three-suited 19+ HCP</li>
-<li>2<font color=red>&hearts;</font> &ndash; balanced, 15-18 HCP, stops in <font color=red>&hearts;</font> and <font color=blue>&spades;</font>
+<li>X &mdash; 12+ HCP with 5+ in <font color=red>&hearts;</font> or <font color=blue>&spades;</font>, or balanced 19-22 HCP, or three-suited 19+ HCP</li>
+<li>2<font color=red>&hearts;</font> &mdash; balanced, 15-18 HCP, stops in <font color=red>&hearts;</font> and <font color=blue>&spades;</font>
 <ul>
-<li>p &ndash; to play</li>
-<li>2<font color=blue>&spades;</font> &ndash; to play</li>
-<li>2N &ndash; transfer to <font color=green>&clubs;</font>/<font color=orange>&diams;</font>
+<li>p &mdash; to play</li>
+<li>2<font color=blue>&spades;</font> &mdash; to play</li>
+<li>2N &mdash; transfer to <font color=green>&clubs;</font>/<font color=orange>&diams;</font>
 <ul>
-<li>3<font color=green>&clubs;</font> &ndash; relay, pass or correct to <font color=orange>&diams;</font></li>
+<li>3<font color=green>&clubs;</font> &mdash; relay, pass or correct to <font color=orange>&diams;</font></li>
 </ul></li>
-<li>... &ndash; as over 2N overcall (Stayman, transfers)</li>
+<li>... &mdash; as over 2N overcall (Stayman, transfers)</li>
 </ul></li>
-<li>2<font color=blue>&spades;</font> &ndash; <font color=green>&clubs;</font> transfer (5+<font color=green>&clubs;</font>, 13+ HCP)
+<li>2<font color=blue>&spades;</font> &mdash; <font color=green>&clubs;</font> transfer (5+<font color=green>&clubs;</font>, 13+ HCP)
 <ul>
-<li>2N &ndash; 9+ HCP
+<li>2N &mdash; 9+ HCP
 <ul>
-<li>3<font color=green>&clubs;</font> &ndash; minimum</li>
-<li>... &ndash; natural, game-forcing</li>
+<li>3<font color=green>&clubs;</font> &mdash; minimum</li>
+<li>... &mdash; natural, game-forcing</li>
 </ul></li>
-<li>3<font color=green>&clubs;</font> &ndash; weak, 0-8 HCP</li>
-<li>... &ndash; strong (11+ HCP), game-forcing</li>
+<li>3<font color=green>&clubs;</font> &mdash; weak, 0-8 HCP</li>
+<li>... &mdash; strong (11+ HCP), game-forcing</li>
 </ul></li>
-<li>2N &ndash; <font color=orange>&diams;</font> transfer (5+<font color=orange>&diams;</font>, 13+ HCP)
+<li>2N &mdash; <font color=orange>&diams;</font> transfer (5+<font color=orange>&diams;</font>, 13+ HCP)
 <ul>
-<li>... &ndash; as after the <font color=green>&clubs;</font> transfer</li>
+<li>... &mdash; as after the <font color=green>&clubs;</font> transfer</li>
 </ul></li>
-<li>3<font color=green>&clubs;</font> &ndash; 9-12 HCP, 6+<font color=green>&clubs;</font></li>
-<li>3<font color=orange>&diams;</font> &ndash; 9-12 HCP, 6+<font color=orange>&diams;</font></li>
-<li>3<font color=red>&hearts;</font> &ndash; 5+<font color=red>&hearts;</font>, 5+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>, non-forcing</li>
-<li>3<font color=blue>&spades;</font> &ndash; 5+<font color=blue>&spades;</font>, 5+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>, non-forcing</li>
-<li>3N &ndash; 23+ HCP, balanced</li>
+<li>3<font color=green>&clubs;</font> &mdash; 9-12 HCP, 6+<font color=green>&clubs;</font></li>
+<li>3<font color=orange>&diams;</font> &mdash; 9-12 HCP, 6+<font color=orange>&diams;</font></li>
+<li>3<font color=red>&hearts;</font> &mdash; 5+<font color=red>&hearts;</font>, 5+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>, non-forcing</li>
+<li>3<font color=blue>&spades;</font> &mdash; 5+<font color=blue>&spades;</font>, 5+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>, non-forcing</li>
+<li>3N &mdash; 23+ HCP, balanced</li>
 </ul></li>
 </ul>
-
-<p>After the double, if the oppoent passes, the structure is similar to a
-multi 2<font color=orange>&diams;</font> opening. Bidding <font color=red>&hearts;</font> or <font color=blue>&spades;</font> is therefore a pass or correct bid
-(<font color=blue>&spades;</font> being invitational in <font color=red>&hearts;</font>). Invitational hands can bid a 2N relay,
-to which partner usually responds with his suit if strong, and with
-3<font color=orange>&diams;</font> if weak. After this 3<font color=orange>&diams;</font>, the structure is again similar as the
-multi 2<font color=orange>&diams;</font> continuations.</p>
-
-<p>All bids at the three level are game-forcing and natural. Doubling any
-further opponents' bids is for penalties, except opener showing his
-major suit<a class="footnote" name="footnote7"><sup>7</sup><span>This is semi-takeout &ndash; partner can pass for penalties.</span></a>.</p>
-
+<p>After the double, if the oppoent passes, the structure is similar to a multi 2<font color=orange>&diams;</font> opening. Bidding <font color=red>&hearts;</font> or <font color=blue>&spades;</font> is therefore a pass or correct bid (<font color=blue>&spades;</font> being invitational in <font color=red>&hearts;</font>). Invitational hands can bid a 2N relay, to which partner usually responds with his suit if strong, and with 3<font color=orange>&diams;</font> if weak. After this 3<font color=orange>&diams;</font>, the structure is again similar as the multi 2<font color=orange>&diams;</font> continuations.</p>
+<p>All bids at the three level are game-forcing and natural. Doubling any further opponents' bids is for penalties, except opener showing his major suit <a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>.</p>
 <ul>
-<li><p>(2<font color=orange>&diams;</font>) &ndash; X &ndash; (p)</p>
-
+<li>(2<font color=orange>&diams;</font>) &mdash; X &mdash; (p)
 <ul>
-<li>(p) &ndash; 4+D, to play<a class="footnote" name="footnote8"><sup>8</sup><span>Suspecting a misfit. Note that opener usually won't pass, so we often get another bid.</span></a></li>
-<li>2<font color=red>&hearts;</font> &ndash; pass or correct</li>
-<li>2<font color=blue>&spades;</font> &ndash; pass or correct<a class="footnote" name="footnote9"><sup>9</sup><span>Invitational if opener has <font color=red>&hearts;</font>.</span></a></li>
-<li>2N &ndash; invitational, 9+ HCP
+<li>p &mdash; 4+D, to play <a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></li>
+<li>2<font color=red>&hearts;</font> &mdash; pass or correct</li>
+<li>2<font color=blue>&spades;</font> &mdash; pass or correct <a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></li>
+<li>2N &mdash; invitational, 9+ HCP
 <ul>
-<li>3<font color=green>&clubs;</font> &ndash; 19+ HCP, three-suited
+<li>3<font color=green>&clubs;</font> &mdash; 19+ HCP, three-suited
 <ul>
-<li>3<font color=orange>&diams;</font> &ndash; show your short suit</li>
-<li>3N &ndash; to play</li>
+<li>3<font color=orange>&diams;</font> &mdash; show your short suit</li>
+<li>3N &mdash; to play</li>
 </ul></li>
-<li>3<font color=orange>&diams;</font> &ndash; 12-14 HCP</li>
-<li>3<font color=red>&hearts;</font> &ndash; 15+ HCP, 5+<font color=red>&hearts;</font>, game-forcing</li>
-<li>3<font color=blue>&spades;</font> &ndash; 15+ HCP, 5+<font color=blue>&spades;</font>, game-forcing</li>
-<li>3N &ndash; 19+ HCP, balanced</li>
+<li>3<font color=orange>&diams;</font> &mdash; 12-14 HCP</li>
+<li>3<font color=red>&hearts;</font> &mdash; 15+ HCP, 5+<font color=red>&hearts;</font>, game-forcing</li>
+<li>3<font color=blue>&spades;</font> &mdash; 15+ HCP, 5+<font color=blue>&spades;</font>, game-forcing</li>
+<li>3N &mdash; 19+ HCP, balanced</li>
 </ul></li>
 </ul></li>
-<li><p>(2<font color=orange>&diams;</font>) &ndash; X &ndash; (2N)<a class="footnote" name="footnote10"><sup>10</sup><span>2N showing a strong hand.</span></a></p>
-
+<li>(2<font color=orange>&diams;</font>) &mdash; X &mdash; (2N) <a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a>
 <ul>
-<li>X &ndash; showing values, for penalties</li>
-<li>... &ndash; competitive</li>
+<li>X &mdash; showing values, for penalties</li>
+<li>... &mdash; competitive</li>
 </ul></li>
-<li><p>(2<font color=orange>&diams;</font>) &ndash; X &ndash; (2<font color=red>&hearts;</font>/<font color=blue>&spades;</font>)</p>
-
+<li>(2<font color=orange>&diams;</font>) &mdash; X &mdash; (2<font color=red>&hearts;</font>/<font color=blue>&spades;</font>)
 <ul>
-<li>(X) &ndash; takeout</li>
-<li>2N &ndash; weak, 6+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>
+<li><ol start="24" style="list-style-type: upper-alpha">
+<li>&mdash; takeout</li>
+</ol></li>
+<li>2N &mdash; weak, 6+<font color=green>&clubs;</font>/<font color=orange>&diams;</font>
 <ul>
-<li>3<font color=green>&clubs;</font> &ndash; pass or correct</li>
+<li>3<font color=green>&clubs;</font> &mdash; pass or correct</li>
 </ul></li>
-<li>... &ndash; 5+ cards, game-forcing</li>
+<li>... &mdash; 5+ cards, game-forcing</li>
 </ul></li>
 </ul>
-
-<h2>After opponents double a major-suit opening</h2>
-
-<p>After partner opens a major suit and the RHO doubles, all bids from
-1N up to a direct raise are transfers to the next higher suit. They
-deny support for opener's suit, show at least five cards in the
-transfer suit and are not forcing beyond completion. </p>
-
-<p>With a strong hand (at least 10 HCP), responder can bid a transfer to
-the opener's suit, 2N or redouble. Redoubling denies support and
-shows a defensive hand (interested in penalising the opponents). 2N
-promises offensive four-card support, and transfering to the opener's
-suit is generally made with three-card support. Also, jump shifts to
-new suits promise four cards in opener's suit and 10 HCP, as well as
-five cards in the suit bid.</p>
-
-<p>A direct raise is therefore weaker and competitive, and jumps in
-opener's suit (both a single jump raise and a jump to game) are
-preemptive.</p>
-
+<h2 id="after-opponents-double-a-major-suit-opening">After opponents double a major-suit opening</h2>
+<p>After partner opens a major suit and the RHO doubles, all bids from 1N up to a direct raise are transfers to the next higher suit. They deny support for opener's suit, show at least five cards in the transfer suit and are not forcing beyond completion.</p>
+<p>With a strong hand (at least 10 HCP), responder can bid a transfer to the opener's suit, 2N or redouble. Redoubling denies support and shows a defensive hand (interested in penalising the opponents). 2N promises offensive four-card support, and transfering to the opener's suit is generally made with three-card support. Also, jump shifts to new suits promise four cards in opener's suit and 10 HCP, as well as five cards in the suit bid.</p>
+<p>A direct raise is therefore weaker and competitive, and jumps in opener's suit (both a single jump raise and a jump to game) are preemptive.</p>
 <ul>
-<li>1<font color=red>&hearts;</font> &ndash; (X)
+<li>1<font color=red>&hearts;</font> &mdash; (X)
 <ul>
-<li>XX &ndash; 10+ HCP, defensive hand<a class="footnote" name="footnote11"><sup>11</sup><span>Usually without <font color=red>&hearts;</font> support and interested in penalising the opponents.</span></a></li>
-<li>1<font color=blue>&spades;</font> &ndash; 4+<font color=blue>&spades;</font>, 6+ HCP</li>
-<li>1N &ndash; 5+<font color=green>&clubs;</font>, no <font color=red>&hearts;</font> support
+<li>XX &mdash; 10+ HCP, defensive hand <a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a></li>
+<li>1<font color=blue>&spades;</font> &mdash; 4+<font color=blue>&spades;</font>, 6+ HCP</li>
+<li>1N &mdash; 5+<font color=green>&clubs;</font>, no <font color=red>&hearts;</font> support
 <ul>
-<li>2<font color=green>&clubs;</font> &ndash; minimum, 2+<font color=green>&clubs;</font></li>
-<li>2<font color=orange>&diams;</font> &ndash; minimum, natural</li>
-<li>2<font color=red>&hearts;</font> &ndash; minimum, no <font color=green>&clubs;</font> support</li>
-<li>3<font color=green>&clubs;</font> &ndash; invitational</li>
-<li>3<font color=orange>&diams;</font> &ndash; 16+ HCP, natural</li>
-<li>3<font color=red>&hearts;</font> &ndash; invitational, 6+<font color=red>&hearts;</font></li>
+<li>2<font color=green>&clubs;</font> &mdash; minimum, 2+<font color=green>&clubs;</font></li>
+<li>2<font color=orange>&diams;</font> &mdash; minimum, natural</li>
+<li>2<font color=red>&hearts;</font> &mdash; minimum, no <font color=green>&clubs;</font> support</li>
+<li>3<font color=green>&clubs;</font> &mdash; invitational</li>
+<li>3<font color=orange>&diams;</font> &mdash; 16+ HCP, natural</li>
+<li>3<font color=red>&hearts;</font> &mdash; invitational, 6+<font color=red>&hearts;</font></li>
 </ul></li>
-<li>2<font color=green>&clubs;</font> &ndash; 5+<font color=orange>&diams;</font>, no <font color=red>&hearts;</font> support</li>
-<li>2<font color=orange>&diams;</font> &ndash; 10+ HCP, 3<font color=red>&hearts;</font>
+<li>2<font color=green>&clubs;</font> &mdash; 5+<font color=orange>&diams;</font>, no <font color=red>&hearts;</font> support</li>
+<li>2<font color=orange>&diams;</font> &mdash; 10+ HCP, 3<font color=red>&hearts;</font>
 <ul>
-<li>2<font color=red>&hearts;</font> &ndash; minimum (12-13 HCP)</li>
-<li>2<font color=blue>&spades;</font> &ndash; singleton <font color=blue>&spades;</font>, game-forcing<a class="footnote" name="footnote12"><sup>12</sup><span>As after Jacoby 2N &ndash; the rest of the bids follows the same idea.</span></a></li>
-<li>3<font color=red>&hearts;</font> &ndash; slam try based on distribution (long <font color=red>&hearts;</font> suit)</li>
-<li>3<font color=blue>&spades;</font> &ndash; 5+<font color=blue>&spades;</font>, game-forcing<a class="footnote" name="footnote13"><sup>13</sup><span>Again, same holds for jumps to 4<font color=green>&clubs;</font> and 4<font color=orange>&diams;</font>.</span></a></li>
-<li>4<font color=red>&hearts;</font> &ndash; to play</li>
+<li>2<font color=red>&hearts;</font> &mdash; minimum (12-13 HCP)</li>
+<li>2<font color=blue>&spades;</font> &mdash; singleton <font color=blue>&spades;</font>, game-forcing <a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a></li>
+<li>3<font color=red>&hearts;</font> &mdash; slam try based on distribution (long <font color=red>&hearts;</font> suit)</li>
+<li>3<font color=blue>&spades;</font> &mdash; 5+<font color=blue>&spades;</font>, game-forcing <a href="#fn13" class="footnoteRef" id="fnref13"><sup>13</sup></a></li>
+<li>4<font color=red>&hearts;</font> &mdash; to play</li>
 </ul></li>
-<li>2<font color=red>&hearts;</font> &ndash; 5-9 HCP, 3<font color=red>&hearts;</font><a class="footnote" name="footnote14"><sup>14</sup><span>Could be four cards with a very defensive hand.</span></a></li>
-<li>2<font color=blue>&spades;</font> &ndash; 5+<font color=blue>&spades;</font>, 4+<font color=red>&hearts;</font></li>
-<li>2N &ndash; 10+ HCP, 4+<font color=red>&hearts;</font></li>
-<li>3<font color=green>&clubs;</font> &ndash; 5+<font color=green>&clubs;</font>, 4+<font color=red>&hearts;</font></li>
-<li>3<font color=orange>&diams;</font> &ndash; 5+<font color=orange>&diams;</font>, 4+<font color=red>&hearts;</font></li>
-<li>3<font color=red>&hearts;</font> &ndash; preemptive</li>
+<li>2<font color=red>&hearts;</font> &mdash; 5-9 HCP, 3<font color=red>&hearts;</font> <a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a></li>
+<li>2<font color=blue>&spades;</font> &mdash; 5+<font color=blue>&spades;</font>, 4+<font color=red>&hearts;</font></li>
+<li>2N &mdash; 10+ HCP, 4+<font color=red>&hearts;</font></li>
+<li>3<font color=green>&clubs;</font> &mdash; 5+<font color=green>&clubs;</font>, 4+<font color=red>&hearts;</font></li>
+<li>3<font color=orange>&diams;</font> &mdash; 5+<font color=orange>&diams;</font>, 4+<font color=red>&hearts;</font></li>
+<li>3<font color=red>&hearts;</font> &mdash; preemptive</li>
 </ul></li>
 </ul>
-
-<h2>After a Michaels cuebid</h2>
-
-<p>After partner opens a major suit and the RHO cuebids, showing a
-two-suited hand (with at least five each in the other major and a
-minor), most bids show support for partner's major. The only bids that
-deny a fit are doubling (for penalties) and a cuebid in the opponent's
-known suit.</p>
-
+<h2 id="after-a-michaels-cuebid">After a Michaels cuebid</h2>
+<p>After partner opens a major suit and the RHO cuebids, showing a two-suited hand (with at least five each in the other major and a minor), most bids show support for partner's major. The only bids that deny a fit are doubling (for penalties) and a cuebid in the opponent's known suit.</p>
 <ul>
-<li>1<font color=red>&hearts;</font> &ndash; (2<font color=red>&hearts;</font>)
+<li>1<font color=red>&hearts;</font> &mdash; (2<font color=red>&hearts;</font>)
 <ul>
-<li>X &ndash; penalty interest</li>
-<li>2<font color=blue>&spades;</font> &ndash; game-forcing, no <font color=red>&hearts;</font> support</li>
-<li>2N &ndash; 3+<font color=red>&hearts;</font>, invitational</li>
-<li>3<font color=green>&clubs;</font> &ndash; 4+<font color=red>&hearts;</font>, 5+<font color=green>&clubs;</font>, invitational<a class="footnote" name="footnote15"><sup>15</sup><span>Like a fit-jump, but without
-the jump.</span></a></li>
-<li>3<font color=orange>&diams;</font> &ndash; 4+<font color=red>&hearts;</font>, 5+<font color=orange>&diams;</font>, invitational</li>
-<li>3<font color=red>&hearts;</font> &ndash; competitive</li>
-<li>3<font color=blue>&spades;</font> &ndash; splinter, <font color=red>&hearts;</font> support</li>
-<li>4<font color=green>&clubs;</font> &ndash; as 3<font color=green>&clubs;</font>, but enough offensive strength to play 4<font color=red>&hearts;</font></li>
-<li>4<font color=orange>&diams;</font> &ndash; as above</li>
-<li>4<font color=red>&hearts;</font> &ndash; to play (two-way)</li>
+<li>X &mdash; penalty interest</li>
+<li>2<font color=blue>&spades;</font> &mdash; game-forcing, no <font color=red>&hearts;</font> support</li>
+<li>2N &mdash; 3+<font color=red>&hearts;</font>, invitational</li>
+<li>3<font color=green>&clubs;</font> &mdash; 4+<font color=red>&hearts;</font>, 5+<font color=green>&clubs;</font>, invitational <a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a></li>
+<li>3<font color=orange>&diams;</font> &mdash; 4+<font color=red>&hearts;</font>, 5+<font color=orange>&diams;</font>, invitational</li>
+<li>3<font color=red>&hearts;</font> &mdash; competitive</li>
+<li>3<font color=blue>&spades;</font> &mdash; splinter, <font color=red>&hearts;</font> support</li>
+<li>4<font color=green>&clubs;</font> &mdash; as 3<font color=green>&clubs;</font>, but enough offensive strength to play 4<font color=red>&hearts;</font></li>
+<li>4<font color=orange>&diams;</font> &mdash; as above</li>
+<li>4<font color=red>&hearts;</font> &mdash; to play (two-way)</li>
 </ul></li>
 </ul>
-
+<div class="footnotes">
 <hr />
-
-<h3>Footnotes:</h3>
-
-<div><a href="#footnote1"><sup>1</sup></a>: In
-Precision, this is 16+ HCP.</div>
-
-<div><a href="#footnote2"><sup>2</sup></a>: Shapes being "rounded" and "pointed".</div>
-
-<div><a href="#footnote3"><sup>3</sup></a>: The only constructive bid available.</div>
-
-<div><a href="#footnote4"><sup>4</sup></a>: Could even be a four-card <font color=blue>&spades;</font> suit at favourable vulnerability.</div>
-
-<div><a href="#footnote5"><sup>5</sup></a>: Showing a weak-two in <font color=red>&hearts;</font> or <font color=blue>&spades;</font>,
-with or without additional strong meanings.</div>
-
-<div><a href="#footnote6"><sup>6</sup></a>: 15-18 HCP, balanced, stops in both
-<font color=red>&hearts;</font> and <font color=blue>&spades;</font>.</div>
-
-<div><a href="#footnote7"><sup>7</sup></a>: This is semi-takeout &ndash; partner can pass for penalties.</div>
-
-<div><a href="#footnote8"><sup>8</sup></a>: Suspecting a misfit. Note that opener usually won't pass, so we often get another bid.</div>
-
-<div><a href="#footnote9"><sup>9</sup></a>: Invitational if opener has <font color=red>&hearts;</font>.</div>
-
-<div><a href="#footnote10"><sup>10</sup></a>: 2N showing a strong hand.</div>
-
-<div><a href="#footnote11"><sup>11</sup></a>: Usually without <font color=red>&hearts;</font> support and interested in penalising the opponents.</div>
-
-<div><a href="#footnote12"><sup>12</sup></a>: As after Jacoby 2N &ndash; the rest of the bids follows the same idea.</div>
-
-<div><a href="#footnote13"><sup>13</sup></a>: Again, same holds for jumps to 4<font color=green>&clubs;</font> and 4<font color=orange>&diams;</font>.</div>
-
-<div><a href="#footnote14"><sup>14</sup></a>: Could be four cards with a very defensive hand.</div>
-
-<div><a href="#footnote15"><sup>15</sup></a>: Like a fit-jump, but without
-      the jump.</div>
+<ol>
+<li id="fn1"><p>In Precision, this is 16+ HCP.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Shapes being "rounded" and "pointed".<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>The only constructive bid available.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Could even be a four-card <font color=blue>&spades;</font> suit at favourable vulnerability.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Showing a weak-two in <font color=red>&hearts;</font> or <font color=blue>&spades;</font>, with or without additional strong meanings.<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>15-18 HCP, balanced, stops in both <font color=red>&hearts;</font> and <font color=blue>&spades;</font>.<a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p>This is semi-takeout &mdash; partner can pass for penalties.<a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p>Suspecting a misfit. Note that opener usually won't pass, so we often get another bid.<a href="#fnref8">↩</a></p></li>
+<li id="fn9"><p>Invitational if opener has <font color=red>&hearts;</font>.<a href="#fnref9">↩</a></p></li>
+<li id="fn10"><p>2N showing a strong hand.<a href="#fnref10">↩</a></p></li>
+<li id="fn11"><p>Usually without <font color=red>&hearts;</font> support and interested in penalising the opponents.<a href="#fnref11">↩</a></p></li>
+<li id="fn12"><p>As after Jacoby 2N &mdash; the rest of the bids follows the same idea.<a href="#fnref12">↩</a></p></li>
+<li id="fn13"><p>Again, same holds for jumps to 4<font color=green>&clubs;</font> and 4<font color=orange>&diams;</font>.<a href="#fnref13">↩</a></p></li>
+<li id="fn14"><p>Could be four cards with a very defensive hand.<a href="#fnref14">↩</a></p></li>
+<li id="fn15"><p>Like a fit-jump, but without the jump.<a href="#fnref15">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>

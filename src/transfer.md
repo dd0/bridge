@@ -12,9 +12,9 @@ licitira svoj prvi četvorokaratni major. Ako nema četiri karte ni u !H
 ni u !S, licitira (veštački) odgovor 2!D.
 
 Dalja licitacija je prirodna -- odgovarač može da skoči u neku manšu
-sa 10+ HCP (ili dobrih 9) ako je pronašao fit {Ili zna da ga nema,
+sa 10+ HCP (ili dobrih 9) ako je pronašao fit ^[Ili zna da ga nema,
 npr. 1!N -- 2!C -- 2!D -- 3!N, ili 1!N -- 2!C -- 2!S -- 3!N ako ima
-četiri herca.}. Svi drugi liciti su prirodni inviti (sa 8 ili loših 9
+četiri herca.]. Svi drugi liciti su prirodni inviti (sa 8 ili loših 9
 HCP), tako da 2!C odgovor obećava minimalno 8 HCP.
 
 Sa 5-4 u majorima, odgovarač takođe licitira Stayman, da bi se izbeglo
@@ -31,14 +31,14 @@ sa game-forcing snagom (10+ HCP).
         * 2!N -- 8-9 HCP, invit za 3!N
         * 3!H -- 5!H, 4!S, GF (10+ HCP)
         * 3!S -- 4!H, 5!S, GF
-    * 2!H -- 4!H {Ne 4+!H jer ne otvaramo 1!N sa pet karata u majoru.}
+    * 2!H -- 4!H ^[Ne 4+!H jer ne otvaramo 1!N sa pet karata u majoru.]
         * 2!S -- 4!S, 3-!H ("da li imaš i !S"), invit
             * 2!N -- nema !S, minimum 
             * 3!N -- nema !S, maksimum
             * 4!S -- potvrđuje !S fit, maksimum
-    * 2!S -- 3-!H, 4!S {Često je i obrnuto (2!S sa oba majora), ali ovo je
-malo logičnije.}
-        * 2!N -- invit za 3!N (8-9 HCP) { Verovatno ima četiri karte u !H. }
+    * 2!S -- 3-!H, 4!S ^[Često je i obrnuto (2!S sa oba majora), ali
+ovo je malo logičnije.]
+        * 2!N -- invit za 3!N (8-9 HCP) ^[ Verovatno ima četiri karte u !H. ]
         * 3!S -- invit za 4!S (8-9 HCP)
 
 
@@ -57,8 +57,8 @@ sa jačom (game-forcing) rukom skače u 3!N ili na četvrti nivo.
 Razlika između !N licita i "podrške" za major je u dužini
 transferisane boje -- sa tačno pet karata, odgovarač licitira !N da bi
 ostavio mogućnost za igranje u bezadutu (u slučaju 5-2 fita). Sa šest
-i više, siguran je da fit postoji {Jer 1!N otvor mora imati bar dubl u
-svakoj boji.} i licitira svoju boju.
+i više, siguran je da fit postoji ^[Jer 1!N otvor mora imati bar dubl
+u svakoj boji.] i licitira svoju boju.
 
 * 1!N -- 2!D (_Jacoby transfer u !H_, 5+!H)
     * 2!H -- prihvaćen transfer (obavezan licit)

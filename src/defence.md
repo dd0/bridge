@@ -2,15 +2,15 @@
 
 ## Against strong 1!C (CRASH)
 
-Over an opponent's strong 1!C opening (that shows a strong hand {In
-Precision, this is 16+ HCP.} and doesn't promise any !C length), all
+Over an opponent's strong 1!C opening (that shows a strong hand ^[In
+Precision, this is 16+ HCP.] and doesn't promise any !C length), all
 bids except doubling are preemptive and deny a strong hand. Doubling
 is for takeout, showing values (at least 12 HCP) and should be a hint
 for partner not to preempt or compete too much, since opponents might
 not have game.
 
 The 1!D, 1!H and 1!N bids are two-suited, showing suits of the same
-colour, rank and shape {Shapes being "rounded" and "pointed".}
+colour, rank and shape ^[Shapes being "rounded" and "pointed".]
 respectively. Overcalling 1!S shows a weak holding with at least five
 spades.
 
@@ -29,10 +29,10 @@ pass/correct relay.
 All suit bids above (and including) 2!S are natural and preemptive.
 
 * (1!C) -- strong, artificial (doesn't promise !C)
-    * X -- 12+ HCP, takeout {The only constructive bid available.}
+    * X -- 12+ HCP, takeout ^[The only constructive bid available.]
     * 1!D -- 5-4, same colour (!C/!S or !D/!H)
     * 1!H -- 5-4, same rank (!C/!D or !H/!S)
-    * 1!S -- 5+!S, weak {Could even be a four-card !S suit at favourable vulnerability.}
+    * 1!S -- 5+!S, weak ^[Could even be a four-card !S suit at favourable vulnerability.]
     * 1!N -- 5-4, same shape (!C/!H or !D/!S)
     * 2!C -- three-suited
     * 2!D -- 6+!H or 5-5 !C/!S
@@ -43,11 +43,11 @@ All suit bids above (and including) 2!S are natural and preemptive.
 
 ## Against multi 2!D (multi against multi)
 
-Over an opponent's multi 2!D opening {Showing a weak-two in !H or !S,
-with or without additional strong meanings.}, a double is also
+Over an opponent's multi 2!D opening ^[Showing a weak-two in !H or !S,
+with or without additional strong meanings.], a double is also
 "multi", usually showing either major and at least opening
-strength. The usual 2!N overcall {15-18 HCP, balanced, stops in both
-!H and !S.} is replaced with 2!H. The other two-level bids (2!S and
+strength. The usual 2!N overcall ^[15-18 HCP, balanced, stops in both
+!H and !S.] is replaced with 2!H. The other two-level bids (2!S and
 2!N) are transfers to the minor suits.
 
 Three-level minor suit overcalls are competitive, showing at least six
@@ -87,12 +87,12 @@ multi 2!D continuations.
 
 All bids at the three level are game-forcing and natural. Doubling any
 further opponents' bids is for penalties, except opener showing his
-major suit {This is semi-takeout -- partner can pass for penalties.}.
+major suit ^[This is semi-takeout -- partner can pass for penalties.].
 
 * (2!D) -- X -- (p)
-    * (p) -- 4+D, to play {Suspecting a misfit. Note that opener usually won't pass, so we often get another bid.}
+    * p -- 4+D, to play ^[Suspecting a misfit. Note that opener usually won't pass, so we often get another bid.]
     * 2!H -- pass or correct
-    * 2!S -- pass or correct {Invitational if opener has !H.}
+    * 2!S -- pass or correct ^[Invitational if opener has !H.]
     * 2!N -- invitational, 9+ HCP
         * 3!C -- 19+ HCP, three-suited
             * 3!D -- show your short suit
@@ -102,7 +102,7 @@ major suit {This is semi-takeout -- partner can pass for penalties.}.
         * 3!S -- 15+ HCP, 5+!S, game-forcing
         * 3!N -- 19+ HCP, balanced
 
-* (2!D) -- X -- (2!N) {2!N showing a strong hand.}
+* (2!D) -- X -- (2!N) ^[2!N showing a strong hand.]
     * X -- showing values, for penalties
     * ... -- competitive
 
@@ -132,7 +132,7 @@ opener's suit (both a single jump raise and a jump to game) are
 preemptive.
 
 * 1!H -- (X)
-    * XX -- 10+ HCP, defensive hand {Usually without !H support and interested in penalising the opponents.}
+    * XX -- 10+ HCP, defensive hand ^[Usually without !H support and interested in penalising the opponents.]
     * 1!S -- 4+!S, 6+ HCP
     * 1!N -- 5+!C, no !H support
         * 2!C -- minimum, 2+!C
@@ -144,11 +144,11 @@ preemptive.
     * 2!C -- 5+!D, no !H support
     * 2!D -- 10+ HCP, 3!H
         * 2!H -- minimum (12-13 HCP)
-        * 2!S -- singleton !S, game-forcing {As after Jacoby 2!N -- the rest of the bids follows the same idea.}
+        * 2!S -- singleton !S, game-forcing ^[As after Jacoby 2!N -- the rest of the bids follows the same idea.]
         * 3!H -- slam try based on distribution (long !H suit)
-        * 3!S -- 5+!S, game-forcing {Again, same holds for jumps to 4!C and 4!D.}
+        * 3!S -- 5+!S, game-forcing ^[Again, same holds for jumps to 4!C and 4!D.]
         * 4!H -- to play
-    * 2!H -- 5-9 HCP, 3!H {Could be four cards with a very defensive hand.}
+    * 2!H -- 5-9 HCP, 3!H ^[Could be four cards with a very defensive hand.]
     * 2!S -- 5+!S, 4+!H
     * 2!N -- 10+ HCP, 4+!H
     * 3!C -- 5+!C, 4+!H
@@ -167,8 +167,8 @@ known suit.
     * X -- penalty interest
     * 2!S -- game-forcing, no !H support
     * 2!N -- 3+!H, invitational
-    * 3!C -- 4+!H, 5+!C, invitational {Like a fit-jump, but without
-      the jump.}
+    * 3!C -- 4+!H, 5+!C, invitational ^[Like a fit-jump, but without
+      the jump.]
     * 3!D -- 4+!H, 5+!D, invitational
     * 3!H -- competitive
     * 3!S -- splinter, !H support
