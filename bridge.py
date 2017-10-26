@@ -4,6 +4,27 @@ import pandocfilters as pf
 import re
 
 
+def is_bidding(blocks):
+    for block in blocks:
+        data = pf.stringify(block[0])
+        if re.match('.*![CDHSN]', data):
+            return True
+    return False
+
+
+prev_key = ''  # worst hack ever
+
+
+def bidding_divs(key, value, fmt, meta):
+    global prev_key
+    if key == 'BulletList' and prev_key != pf.stringify(value[0]):
+        prev_key = pf.stringify(value[0])
+        if is_bidding(value):
+            attr = ('', ['bids'], [])
+            return pf.Div(attr, [pf.BulletList(value)])
+    return None
+
+
 def suit_symbols(key, value, fmt, meta):
     if key == 'Str':
         abbrevs = ['!C', '!D', '!H', '!S', '!N']
@@ -76,7 +97,9 @@ def block_hands(key, value, fmt, meta):
             m = re.match('([NSEW]): (.*)', line)
             if m:
                 hands[m.group(1)] = m.group(2)
-
+        if len(hands) == 0:
+            return None
+                
         empty_cell = [pf.Plain([])]
 
         diagram = [[empty_cell] * 3 for _ in range(3)]
@@ -91,7 +114,80 @@ def block_hands(key, value, fmt, meta):
                          [0, 0, 0],
                          [],
                          diagram)
-        return table
+        attr = ('', ['hands'], [])
+
+        return pf.Div(attr, [table])
+    return None
+
+
+def reshape(n, data, fill=None):
+    res = []
+    line = []
+    for x in data:
+        line.append(x)
+        if len(line) == n:
+            res.append(line)
+            line = []
+    if len(line) > 0:
+        while(len(line) < n):
+            line.append(fill)
+        res.append(line)
+    return res
+
+
+def block_bids(key, value, fmt, meta):
+    def disp_bid(b):
+        if b == 'p':
+            return 'pass'
+        elif b[0] in '1234567' and b[1] in 'CDHS':
+            return b[0] + '!' + b[1:]
+        else:
+            return b
+    
+    if key == 'CodeBlock':
+        m = re.match('(NS|EW|all)(/[NSEW])?: (.*)', value[1])
+        if m is None:
+            return None
+
+        players = m.group(1)
+        def_mod = {'NS': 1, 'EW': 0, 'all': -1}
+        bids = m.group(3).split('-')
+
+        first_player = 1 if players == 'EW' else 0
+        if m.group(2):
+            first_player = 'NESW'.find(m.group(2)[1])
+        player = first_player
+        res = []
+
+        for bid in bids:
+            defence = bid[0] == '(' and bid[-1] == ')'
+            if defence:
+                res.append(bid[1:-1])
+            elif player % 2 == def_mod[players]:
+                res.append('p')
+            else:
+                res.append(bid)
+            player = (player + 1) % 4
+
+        while len(res) < 3 or res[-3:].count('p') != 3:
+            res.append('p')
+
+        res = [disp_bid(b) for b in res]
+
+        empty_cell = [pf.Plain([])]
+        def make_cell(r):
+            return [pf.Plain([pf.Str(r)])]
+        flat_cells = [empty_cell] * first_player + [make_cell(r) for r in res]
+        cells = reshape(4, flat_cells, empty_cell)
+
+        names = [make_cell(x) for x in ['North', 'East', 'South', 'West']]
+
+        AlignCenter = {'t': 'AlignCenter'}
+        table = pf.Table([], [AlignCenter] * 4, [0] * 4, names, cells)
+        attr = ('', ['bidding'], [])
+        
+        return pf.Div(attr, [table])
+
     return None
 
 
@@ -111,8 +207,10 @@ def html_dashes(key, value, fmt, meta):
         return None
 
 if __name__ == '__main__':
-    pf.toJSONFilters([inline_hands,
+    pf.toJSONFilters([bidding_divs,
+                      inline_hands,
                       block_hands,
+                      block_bids,
                       suit_symbols,
                       html_dashes])
 
