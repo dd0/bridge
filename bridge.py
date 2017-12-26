@@ -7,7 +7,7 @@ import re
 def is_bidding(blocks):
     for block in blocks:
         data = pf.stringify(block[0])
-        if re.match('.*![CDHSN]', data):
+        if re.match('.*![CDHSN].*--.*', data):
             return True
     return False
 
@@ -70,7 +70,8 @@ def inline_hands(key, value, fmt, meta):
             hold = hand.split(',')
             suit = ['!S', '!H', '!D', '!C']
 
-            res = ' '.join(s + h for s, h in zip(suit, hold))
+            res = ' '.join(s + (h if len(h) > 0 else '--')
+                           for s, h in zip(suit, hold))
 
             return pf.Str(res)
 
@@ -143,7 +144,7 @@ def block_bids(key, value, fmt, meta):
             return b[0] + '!' + b[1:]
         else:
             return b
-    
+
     if key == 'CodeBlock':
         m = re.match('(NS|EW|all)(/[NSEW])?: (.*)', value[1])
         if m is None:
@@ -151,26 +152,35 @@ def block_bids(key, value, fmt, meta):
 
         players = m.group(1)
         def_mod = {'NS': 1, 'EW': 0, 'all': -1}
-        bids = m.group(3).split('-')
+
+        raw_bids = m.group(3)
+        auction_done = raw_bids[-1] != '-'
+        if not auction_done:
+            raw_bids = raw_bids[:-1]
+        bids = raw_bids.split('-')
 
         first_player = 1 if players == 'EW' else 0
         if m.group(2):
             first_player = 'NESW'.find(m.group(2)[1])
         player = first_player
         res = []
-
+    
         for bid in bids:
             defence = bid[0] == '(' and bid[-1] == ')'
+
+            if player % 2 == def_mod[players] and not defence:
+                res.append('p')
+                player = (player + 1) % 4
+
             if defence:
                 res.append(bid[1:-1])
-            elif player % 2 == def_mod[players]:
-                res.append('p')
             else:
                 res.append(bid)
             player = (player + 1) % 4
 
-        while len(res) < 3 or res[-3:].count('p') != 3:
-            res.append('p')
+        if auction_done:
+            while len(res) < 3 or res[-3:].count('p') != 3:
+                res.append('p')
 
         res = [disp_bid(b) for b in res]
 
