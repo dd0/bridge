@@ -1,7 +1,10 @@
-\newcommand{\clubs}[2]{\mbox{#1\ensuremath{\clubsuit}#2}}
-\newcommand{\diamonds}[2]{\mbox{#1\ensuremath{\diamondsuit}#2}}
-\newcommand{\hearts}[2]{\mbox{#1\ensuremath{\heartsuit}#2}}
-\newcommand{\spades}[2]{\mbox{#1\ensuremath{\spadesuit}#2}}
+\usepackage{arev} % for filled \varheart and \vardiamond
+\definecolor{DarkGreen}{rgb}{0,.5,0}
+
+\newcommand{\clubs}[2]{\mbox{#1\ensuremath{\color{DarkGreen}\clubsuit}#2}}
+\newcommand{\diamonds}[2]{\mbox{#1\ensuremath{\color{orange}\vardiamond}#2}}
+\newcommand{\hearts}[2]{\mbox{#1\ensuremath{\color{red}\varheart}#2}}
+\newcommand{\spades}[2]{\mbox{#1\ensuremath{\color{blue}\spadesuit}#2}}
 
 \renewcommand\labelitemii{{\boldmath$\cdot$}}
 \renewcommand\labelitemiii{{\boldmath$\cdot$}}
