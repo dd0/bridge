@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # Pandoc plugin for typesetting bridge-related documents
 
 import pandocfilters as pf
@@ -6,6 +7,8 @@ import re
 
 def is_bidding(blocks):
     for block in blocks:
+        if len(block) == 0:
+            continue
         data = pf.stringify(block[0])
         if re.match('.*![CDHSN].*--.*', data):
             return True
@@ -46,10 +49,10 @@ def suit_symbols(key, value, fmt, meta):
         else:
             # LaTeX needs special handling (for mbox)
             value = value.replace('!N', 'N')
-            suit = ['\\clubs{\\1}{\\2}',
-                    '\\diamonds{\\1}{\\2}',
-                    '\\hearts{\\1}{\\2}',
-                    '\\spades{\\1}{\\2}']
+            suit = [r'\\clubs{\\1}{\\2}',
+                    r'\\diamonds{\\1}{\\2}',
+                    r'\\hearts{\\1}{\\2}',
+                    r'\\spades{\\1}{\\2}']
 
             for (abbrev, symbol) in zip(abbrevs, suit):
                 value = re.sub('([a-zA-Z0-9]*)%s([a-zA-Z0-9]*)' % abbrev,
