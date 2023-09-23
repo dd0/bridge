@@ -49,10 +49,10 @@ def suit_symbols(key, value, fmt, meta):
         else:
             # LaTeX needs special handling (for mbox)
             value = value.replace('!N', 'N')
-            suit = [r'\\clubs{\\1}{\\2}',
-                    r'\\diamonds{\\1}{\\2}',
-                    r'\\hearts{\\1}{\\2}',
-                    r'\\spades{\\1}{\\2}']
+            suit = [r'\\clubs{\1}{\2}',
+                    r'\\diamonds{\1}{\2}',
+                    r'\\hearts{\1}{\2}',
+                    r'\\spades{\1}{\2}']
 
             for (abbrev, symbol) in zip(abbrevs, suit):
                 value = re.sub('([a-zA-Z0-9]*)%s([a-zA-Z0-9]*)' % abbrev,
